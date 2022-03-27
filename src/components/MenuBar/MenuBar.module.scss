@@ -1,0 +1,63 @@
+.container{
+    padding: 0.5rem 0.5rem;
+    justify-content: space-between;
+}
+.navbarToggler{
+    font-size: 1rem;
+    padding: 0rem;
+}
+
+.siteLogo{
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        width: 70%;
+    }
+}
+.primaryNavigation{
+
+    a{
+        color: #2D2828;
+        margin: 0rem 1rem;
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    a:active{
+        color: #2C0085
+    }
+}
+
+@media all and (min-width:991px){
+    .container{
+        padding: 1rem 3rem 1rem 3rem;
+        justify-content: space-between;
+    }
+    .siteLogo{
+        img{
+            width: 80%;
+        }
+    }
+    .primaryNavigation{
+        margin: 0rem 3rem 0rem 0rem;
+        
+        a{
+            margin: 0rem 0.5rem;
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media all and (min-width:1200px){
+    .container{
+        padding: 1rem 7rem 1rem 7rem;
+        justify-content: space-between;
+
+        a{
+            margin: 0rem 0.5rem;
+            font-size: 0.875rem;
+        }
+    }
+   
+}
