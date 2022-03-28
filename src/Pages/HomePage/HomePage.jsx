@@ -11,6 +11,10 @@ import purposeBgImg from "@/assets/images/purpose_bg.png";
 import BlogBgImg from "@/assets/images/blog_bg.png";
 import BlogThumbnail from "@/assets/images/blog_thumbnail.png";
 import Button from "@/components/Button/Button";
+import ProjectImage1 from "@/assets/images/projectContainer1.png";
+import ProjectImage2 from "@/assets/images/projectContainer2.png";
+import ProjectImage3 from "@/assets/images/projectContainer3.png";
+import ProjectImage4 from "@/assets/images/projectContainer4.png";
 
 const HomePage = () => {
 
@@ -87,6 +91,65 @@ const HomePage = () => {
 						<div className={cx("row")}>
 							<div className={cx("col-9", "flexRow-fully-centered", styles.textContent)}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
 							<div className={cx("col-3", "flexRow-fully-centered", styles.title)}>Our Mission</div>
+						</div>
+					</div>
+				</div>
+
+				<div className={cx(styles.container)}>
+					<div className={cx(styles.projectsDiv)}>
+						<div className={cx(styles.header, "flexRow-space-between-align-flex-end")}>
+							<h2>Projects</h2>
+							<Button onClick={()=>navigate("/")} title="View All" borderRadiusType="lowRounded" textColor="#1242D4" bordercolor = "" bgColor="#CED9F4"/>
+						</div>
+
+						<div className={cx(styles.projects, "row")}>
+							<div className={cx(styles.mainCardDiv, "col-xs-12", "col-sm-8")}>
+								
+								<Card className={cx(styles.cardItem)}>
+									<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+										<div className={cx(styles.imageDiv)}>
+											<img src={ProjectImage1} alt="" />
+										</div>
+									</Card.Header>
+									<Card.Body className={cx(styles.cardBody)}>
+										Project Details here
+									</Card.Body>
+								</Card>
+							</div>
+							<div className={cx(styles.subCardsDiv, "col-xs-12", "col-sm-4")}>
+								<div>
+									<Card className={cx(styles.cardItem)}>
+										<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+											<div className={cx(styles.imageDiv)}>
+												<img src={ProjectImage2} alt="" />
+											</div>
+										</Card.Header>
+										<Card.Body className={cx(styles.cardBody)}>
+										Project Details here
+										</Card.Body>
+									</Card>
+								</div>
+								<div>	<Card className={cx(styles.cardItem)}>
+									<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+										<div className={cx(styles.imageDiv)}>
+											<img src={ProjectImage3} alt="" />
+										</div>
+									</Card.Header>
+									<Card.Body className={cx(styles.cardBody)}>
+										Project Details here
+									</Card.Body>
+								</Card></div>
+								<div>	<Card className={cx(styles.cardItem)}>
+									<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+										<div className={cx(styles.imageDiv)}>
+											<img src={ProjectImage4} alt="" />
+										</div>
+									</Card.Header>
+									<Card.Body className={cx(styles.cardBody)}>
+										Project Details here
+									</Card.Body>
+								</Card></div>
+							</div>
 						</div>
 					</div>
 				</div>
