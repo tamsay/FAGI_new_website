@@ -1,11 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import PageContainer from "@/components/PageContainer/PageContainer";
 
 const ContactUs = props => {
 	return (
-		<div>
-			{props.title}
-		</div>
+		<PageContainer>
+			<div>
+				{props.title}
+			</div>
+		</PageContainer>
+		
 	);
 };
 

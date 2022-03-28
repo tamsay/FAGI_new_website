@@ -2,9 +2,10 @@
     font-family: Inter;
 
     .container{
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    margin: 0rem 0rem 2rem 0rem;
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        margin: 0rem 0rem 2rem 0rem;
+    }
 
     .heroDiv{
         background-size: cover;
@@ -14,7 +15,11 @@
         border-radius: 0rem 0rem 0rem 2rem;
 
         .heroText {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            background: linear-gradient(rgba(1, 7, 61, 0.75), rgba(1, 7, 61, 0.75));
+
+// background: #2752D5;
+// mix-blend-mode: multiply;
+
             color: white;
             width: 80%;
             padding: 2rem 1rem;
@@ -32,6 +37,13 @@
                 width: fit;
             }
         }
+    }
+
+    .ourPurposeSection, .blogSection{
+        padding: 3rem 1rem !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center
     }
 
     .visionAndMissionDiv{
@@ -55,139 +67,119 @@
         }
     }
 
-    .cardWrapper {
-        justify-content: center;
-         gap:3rem;
-         flex-wrap: wrap;
-    
-         .cardItem{
-            width: 18rem ;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0px 35px 35px 40px rgba(210, 213, 235, 0.2);
-            padding: 1rem 0.5rem;
-            
-            .cardHeader{
-                background-color: transparent;
-                border: none;
-                p{
-                    padding: 1.5rem 2rem;
-                    background-color: #CED9F4;
-                    width: fit-content;
-                    line-height: 1;
-                    border-radius: 0.5rem;
-                    color: #1242D4;
-                    font-weight: bold;
-                }
-                h3{
-                    margin-top: 1rem;
-                }
-            }
-            .cardBody{
-                font-size: 0.875rem;
-            }
-            .cardFooter{
-                background-color: transparent;
-                border: none;
-                display: flex;
-                justify-content: flex-start;
-                text-align: center;
-                font-size: 0.875rem;
-            }
-        }
-    }
-}
+    .ourPurposeSection {
 
-.ourPurposeSection {
-    .cardWrapper :hover{
-        background-color: #1242D4;
-        color: white;
-        p{
-            background-color: #A01F45 !important;
-            color: #fff !important;
-        }
-        button{
-            background-color: #A01F45 !important;
-            color: #fff !important;
-        }
-    }
-}
-.ourPurposeSection, .blogSection{
-    padding: 2rem !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center
-}
-
-.blogSection{
-    .header {
-        margin-bottom: 1.75rem;
-        h2{
-            line-height: 1;
-            padding: 0rem;
-            margin: 0rem;
-        }
-    }
-    .cardWrapper {
-        .cardItem {
-            padding: 0rem;
-            .cardHeader {
-                padding: 0.5rem;
-                .imageDiv {
-                img{
-                    width: 100%;
-                }
-            }
-            small{
-                margin-top: 0.5rem;
-                font-weight: bold;
-            }
-            }
-            .cardBody {
-            padding: 0.5rem;
-            h3{
-                font-size: 1.125rem;
-            }
-            p{
-                font-size: 0.9rem;
-            }
-            }
-        
-        }
-     
-    }
-  
-}
-
-.smallCardWrapper{
-    justify-content: space-between;
-    font-family: Poppins;
-    .cardItem{
-        width: 90%;
-        border-radius: 10px;
-        box-shadow: 0px 18px 18px rgba(210, 213, 235, 0.44);
-
-        .cardHeader{
-            background-color: transparent;
-            border: none;
-            display: flex;
+        .cardWrapper {
             justify-content: center;
-            img{
-                width: 50%;
-                align-self: center;
+            gap:3rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            .cardItem{
+                width: 18rem ;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0px 35px 35px 40px rgba(210, 213, 235, 0.2);
+                padding: 1rem 0.5rem;
+                
+                .cardHeader{
+                    background-color: transparent;
+                    border: none;
+                    .countDiv{
+                        padding: 0;
+                        display: flex;
+                        justify-content:center;
+                        align-items:center;
+                        background-color: #CED9F4;
+                        line-height: 1;
+                        border-radius: 0.5rem;
+                        color: #1242D4;
+                        font-weight: bold;
+                        width: 45px;
+                        height: 45px;
+                        font-size: 1.25rem;
+                    }
+                    h3{
+                        margin: 1rem 0rem 0rem 0rem;
+                    }
+                }
+                .cardBody{
+                    font-size: 0.875rem;
+                }
+                .cardFooter{
+                    background-color: transparent;
+                    border: none;
+                    display: flex;
+                    justify-content: flex-start;
+                    text-align: center;
+                }
             }
         }
-        .cardBody{
-            border: none;
-            text-align: center;
-            font-size: clamp(0.625rem, 0.75rem, 0.875rem);
-            padding: 1rem 0.5rem;
+        .cardWrapper :hover{
+            background-color: #1242D4;
+            color: white;
+            p{
+                background-color: #A01F45 !important;
+                color: #fff !important;
+            }
+            button{
+                background-color: #A01F45 !important;
+                color: #fff !important;
+            }
         }
     }
-}
-.padBottom{
-    padding-bottom: 3rem;
-}
+
+    .blogSection{
+        .header {
+            margin-bottom: 1.75rem;
+            h2{
+                line-height: 1;
+                padding: 0rem;
+                margin: 0rem;
+            }
+        }
+        .cardWrapper {
+            justify-content: center;
+            gap:3rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+
+            .cardItem {
+                width: 18rem ;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0px 35px 35px 40px rgba(210, 213, 235, 0.2);
+                padding: 0rem;
+                .cardHeader {
+                    padding: 0.5rem;
+                    background-color: transparent;
+                    border: none;
+
+                    .imageDiv {
+                    img{
+                        width: 100%;
+                    }
+                }
+                small{
+                    margin-top: 0.5rem;
+                    font-weight: bold;
+                    color: #666666;
+                    font-size: 0.875rem;
+                }
+                }
+                .cardBody {
+                padding: 0.5rem;
+                h3{
+                    font-size: 1.125rem;
+                    color: #333333;
+                }
+                p{
+                    font-size: 0.875rem;
+                    color: #666666;
+                }
+                }
+            }
+        }  
+    }
 }
 
 
@@ -197,7 +189,7 @@
     .container{        
         padding: 0.5rem 0rem;
         margin: 0rem 0rem 2rem 0rem;
-
+    }
         .heroDiv{
             height: 60vh;
             border-radius: 0rem 0rem 0rem 2rem;
@@ -226,7 +218,7 @@
 
         .visionAndMissionDiv{
             gap: 1.5rem;
-            padding: 0.5rem 4rem;
+            padding: 0.5rem 4rem !important;
     
             .title{
                 font-size: 1.25rem;
@@ -239,219 +231,340 @@
             }
         }
 
-        .cardWrapper {
+        .ourPurposeSection{
+             .cardWrapper {
             justify-content: space-between;
-             gap: 1rem;
+             gap: 0.5rem;
              flex-wrap: nowrap;
         
              .cardItem{
-                width: 33% ;
-                border: none;
-                border-radius: 10px;
-                box-shadow: 0px 35px 35px 40px rgba(210, 213, 235, 0.2);
+                width: auto;
                 padding: 1rem 0.5rem;
                 
                 .cardHeader{
-                    background-color: transparent;
-                    border: none;
-                    p{
-                        padding: 1.5rem 2rem;
-                        background-color: #CED9F4;
-                        width: fit-content;
-                        line-height: 1;
-                        border-radius: 0.5rem;
-                        color: #1242D4;
-                        font-weight: bold;
+                    padding: 0rem 0.5rem;
+
+                    .countDiv{
+                        width: 50px;
+                        height: 50px;
                     }
                     h3{
-                        margin-top: 1rem;
+                        font-size: 1.125rem;
                     }
                 }
                 .cardBody{
-                    font-size: 0.875rem;
+                    font-size: 0.75rem;
+                    padding: 0.5rem;
                 }
                 .cardFooter{
-                    background-color: transparent;
-                    border: none;
-                    display: flex;
-                    justify-content: flex-start;
-                    text-align: center;
-                    font-size: 0.875rem;
+                    padding: 0rem 0.5rem;
+
                 }
             }
         }
-
-    }
-
+        }
+       
     .ourPurposeSection, .blogSection{
         padding: 4rem !important;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center
+    }
+
+    .blogSection{
+        .header {
+            margin-bottom: 1.75rem;
+            h2{
+               
+            }
+        }
+        .cardWrapper {
+            justify-content: space-between;
+            gap: 0.5rem;
+            flex-wrap: nowrap;
+
+            .cardItem {
+                width: 100%;
+                padding: 0rem;
+
+                .cardHeader {
+                    padding: 0.5rem;
+                    .imageDiv {
+                    img{
+                        width: 100%;
+                    }
+                }
+                small{
+                    margin-top: 0.5rem;
+                    font-weight: bold;
+                }
+                }
+                .cardBody {
+                padding: 0.5rem;
+                h3{
+                    font-size: 0.9rem;
+                    margin: 0rem 0rem 1rem 0rem;
+                    padding: 0rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+                }
+            
+            }
+         
+        }
+      
     }
 
     }
 }
 
 @media all and (min-width: 991px){
-    .homePageWrapper{
-            .padBottom{
-        padding-bottom: 5rem;
+    .homePageWrapper{   
+        
+        .container{        
+        padding: 0.5rem 0rem;
+        margin: 0rem 0rem 2rem 0rem;
     }
-    .padLeft{
-        padding-left: 7rem;
-    }
-    .container{        
-        .heroImage{
-            width: 100%;
-        }
-        .btnDiv{
-            gap: 1rem;
-            margin-top: 3rem; 
-         }
-    }
-
-    .cardWrapper {
-        margin-top: 2rem;
-         .cardItem{
-            width: 18rem ;
-        }
-    }
-
-    .smallCardWrapper{
-        .cardItem{
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0px 17px 24px rgba(210, 213, 235, 0.44);
+        .heroDiv{
+            height: 60vh;
     
-            .cardHeader{
-                background-color: transparent;
-                border: none;
-                display: flex;
-                justify-content: center;
-                img{
-                    width: 50%;
-                    align-self: center;
+            .heroText {
+                width: 60%;
+                padding: 5rem;
+                margin: 0rem 0rem 0rem 6rem;
+                border-radius: 0.75rem;
+                p{
+                    font-size: 1.75rem;
+                    text-align: left !important;
+                }
+    
+                .variableText{
+                    font-size: 1.875rem;
                 }
             }
-            .cardBody{
-                border: none;
-                text-align: center;
-                font-size: 0.75rem;
+        }
+
+        .visionAndMissionDiv{
+            gap: 1.75rem;
+            padding: 3rem 5rem !important;
+    
+            .title{
+                font-size: 1.375rem;
+                line-height: 1.25
+            }
+            .textContent{
+                padding: 1rem;
+                font-size: 1rem;
+                line-height: 1.25;
             }
         }
-    }
 
-    .subscribeDiv{
-        margin: 7rem 0rem;
-        padding: 4rem 0rem;
-     
-        .subscribeInputDiv{
-            border: 1px solid white;
-            padding: 0rem 0rem 0rem 1rem;
-            border-radius: 10px;
-            background-color:transparent;
-            width: 80%;
-            input{
-                padding: 0rem;
-                border: none;
-                background-color:transparent;
-                color: white;
-                outline: none;
+        .ourPurposeSection{
+             .cardWrapper {
+             gap: 1rem;
+        
+             .cardItem{
+                width: auto;
+                padding: 1rem;
+                
+                .cardHeader{
+                    padding: 0rem 0.5rem;
+                    height: 100%;
 
-                ::placeholder{
-                    color: white;
+                    .countDiv{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                }
+                .cardBody{
+                    font-size: 1rem;
+                    padding: 0.5rem;
+                }
+                .cardFooter{
+                    padding: 0rem 0.5rem;
                 }
             }
-            i img{
-                width: 1.75rem;
-                border-radius: 10px;
-            }
         }
-    }
+        }
+       
+    .ourPurposeSection, .blogSection{
+        padding: 5rem !important;
     }
 
+    .blogSection{
+        .header {
+            margin-bottom: 1.875rem;
+        }
+        .cardWrapper {
+            gap: 1rem;
 
+            .cardItem {
+                width: 100%;
+                padding: 0.5rem;
+
+                .cardHeader {
+                    padding: 0.5rem;
+                    .imageDiv {
+                    img{
+                        width: 100%;
+                    }
+                }
+                small{
+                    margin-top: 0.625rem;
+                    font-weight: bold;
+                }
+                }
+                .cardBody {
+                padding: 0.5rem;
+                h3{
+                    font-size: 1.125rem;
+                    margin: 0rem 0rem 1rem 0rem;
+                    padding: 0rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                }
+                p{
+                    font-size: 0.875rem;
+                }
+                }
+            
+            }
+         
+        }
+      
+    }
+
+    }
 }
 
 @media all and (min-width: 1200px){
-    .homePageWrapper{
-        .padBottom{
-        padding-bottom: 5rem;
+    .homePageWrapper{   
+        
+        .container{        
+        padding: 1rem 0rem;
+        margin: 0rem 0rem 2rem 0rem;
     }
-    .padLeft{
-        padding-left: 7rem;
-    }
-    .container{        
-        .heroImage{
-            width: 100%;
+        .heroDiv{
+            height: 90vh;
+    
+            .heroText {
+                width: 50%;
+                padding: 7rem 7rem;
+                margin: 0rem 0rem 0rem 7rem;
+                border-radius: 0.75rem;
+                p{
+                    font-size: 1.75rem;
+                    text-align: left !important;
+                }
+    
+                .variableText{
+                    font-size: 1.875rem;
+                }
+            }
         }
-        .btnDiv{
+
+        .visionAndMissionDiv{
+            gap: 1.75rem;
+            padding: 4rem 7rem !important;
+    
+            .title{
+                font-size: 2rem;
+                line-height: 1.25
+            }
+            .textContent{
+                padding: 1rem;
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+        }
+
+        .ourPurposeSection{
+             .cardWrapper {
+             gap: 2rem;
+        
+             .cardItem{
+                width: auto;
+                padding: 2rem;
+                
+                .cardHeader{
+                    padding: 0rem 0rem;
+                    height: 100%;
+
+                    .countDiv{
+                        width: 55px;
+                        height: 55px;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+                .cardBody{
+                    font-size: 1.125rem;
+                    padding: 0rem;
+                }
+                .cardFooter{
+                    padding: 1.5rem 0rem 0rem;
+                }
+            }
+        }
+        }
+       
+    .ourPurposeSection, .blogSection{
+        padding: 7rem !important;
+    }
+
+    .blogSection{
+        .header {
+            margin-bottom: 1.875rem;
+        }
+        .cardWrapper {
             gap: 1rem;
-            margin-top: 3rem; 
-         }
-         }
 
-    .cardWrapper {
-        margin-top: 2rem;
-         .cardItem{
-            width: 18rem ;
-        }
-    }
+            .cardItem {
+                width: 100%;
+                padding: 0.5rem;
 
-    .smallCardWrapper{
-        margin: 3rem 0rem; 
-        .cardItem{
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0px 17px 24px rgba(210, 213, 235, 0.44);
-    
-            .cardHeader{
-                background-color: transparent;
-                border: none;
-                display: flex;
-                justify-content: center;
-                img{
-                    width: 50%;
-                    align-self: center;
+                .cardHeader {
+                    padding: 0.5rem;
+                    .imageDiv {
+                    img{
+                        width: 100%;
+                    }
                 }
-            }
-            .cardBody{
-                border: none;
-                text-align: center;
-                font-size: 0.75rem;
-            }
-        }
-    }
-
-    .subscribeDiv{
-        margin: 7rem 0rem;
-        padding: 7rem 0rem;
-
-        .subscribeInputDiv{
-            border: 1px solid white;
-            padding: 0rem 0rem 0rem 1rem;
-            border-radius: 10px;
-            background-color:transparent;
-            width: 80%;
-            input{
-                padding: 0rem;
-                border: none;
-                background-color:transparent;
-                color: white;
-                outline: none;
-
-                ::placeholder{
-                    color: white;
+                small{
+                    margin-top: 0.625rem;
+                    font-weight: bold;
                 }
+                }
+                .cardBody {
+                padding: 0.5rem;
+                h3{
+                    font-size: 1.125rem;
+                    margin: 0rem 0rem 1rem 0rem;
+                    padding: 0rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                }
+                p{
+                    font-size: 0.875rem;
+                }
+                }
+            
             }
-            i img{
-                width: 1.75rem;
-                border-radius: 10px;
-            }
+         
         }
+      
     }
-    }
-    
 
+    }
 }

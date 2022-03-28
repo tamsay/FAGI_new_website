@@ -12,20 +12,6 @@ import BlogBgImg from "@/assets/images/blog_bg.png";
 import BlogThumbnail from "@/assets/images/blog_thumbnail.png";
 import Button from "@/components/Button/Button";
 
-import boyImage from "@/assets/images/right boy.png";
-import manImage from "@/assets/images/man.png";
-import whyChooseImage from "@/assets/images/whyChooseImage.png";
-import subscribeImage from "@/assets/images/subscribeImage.png";
-import servicesIcon1 from "@/assets/icons/servicesIcon1.png";
-import servicesIcon2 from "@/assets/icons/servicesIcon2.png";
-import servicesIcon3 from "@/assets/icons/servicesIcon3.png";
-import whyChooseIcon1 from "@/assets/icons/whyChooseIcon1.png";
-import whyChooseIcon2 from "@/assets/icons/whyChooseIcon2.png";
-import whyChooseIcon3 from "@/assets/icons/whyChooseIcon3.png";
-import arrowUpIcon from "@/assets/icons/arrow-up.svg";
-import appleStore from "@/assets/images/Apple Store.png";
-import googleStore from "@/assets/images/Google Play.png";
-
 const HomePage = () => {
 
 	const navigate = useNavigate();
@@ -82,7 +68,7 @@ const HomePage = () => {
 
 						<div className={cx(styles.heroText, "flexCol-align-center")}>
 
-							<p className="text-center  pb-4">Improving the wellbeing of Africans through <span className={cx(styles.variableText)}>{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</span> </p>
+							<p className="text-center  pb-4">Improving the wellbeing of Africans through <br /> <span className={cx(styles.variableText)}>{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</span> </p>
 
 							<div className={cx(styles.btnDiv, "flexRow-fully-centered")}>
 								<Button onClick={()=>navigate("/")} title="Read More" borderRadiusType="lowRounded" textColor="#fff" bordercolor = "" bgColor="#A01F45"/>
@@ -109,8 +95,8 @@ const HomePage = () => {
 					<h2>Our Purpose</h2>
 					<div className={cx(styles.cardWrapper, "flexRow")}>
 						<Card className={cx(styles.cardItem)}>
-							<Card.Header className={cx(styles.cardHeader, "flexCol")}>
-								<p>1</p>
+							<Card.Header className={cx(styles.cardHeader, "flexCol", "h-100")}>
+								<p className={cx(styles.countDiv)}>1</p>
 								<h3>Malnutrition</h3>
 							</Card.Header>
 							<Card.Body className={cx(styles.cardBody)}>
@@ -121,8 +107,8 @@ const HomePage = () => {
 						</Card>
 
 						<Card className={cx(styles.cardItem)}>
-							<Card.Header className={cx(styles.cardHeader, "flexCol")}>
-								<p>2</p>
+							<Card.Header className={cx(styles.cardHeader, "h-100", "flexCol")}>
+								<p className={cx(styles.countDiv)}>2</p>
 								<h3>Non-Communicable Diseases</h3>
 							</Card.Header>
 							<Card.Body className={cx(styles.cardBody)}>
@@ -133,8 +119,8 @@ const HomePage = () => {
 						</Card>
 
 						<Card className={cx(styles.cardItem)}>
-							<Card.Header className={cx(styles.cardHeader, "flexCol")}>
-								<p>3</p>
+							<Card.Header className={cx(styles.cardHeader, "h-100", "flexCol")}>
+								<p className={cx(styles.countDiv)}>3</p>
 								<h3>Substance Abuse</h3>
 							</Card.Header>
 							<Card.Body className={cx(styles.cardBody)}>
@@ -171,7 +157,7 @@ const HomePage = () => {
 						</Card>
 
 						<Card className={cx(styles.cardItem)}>
-							<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+							<Card.Header className={cx(styles.cardHeader,  "flexCol")}>
 								<div className={cx(styles.imageDiv)}>
 									<img src={BlogThumbnail} alt="blog-thumbnail" />
 								</div>
@@ -187,7 +173,7 @@ const HomePage = () => {
 						</Card>
 
 						<Card className={cx(styles.cardItem)}>
-							<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+							<Card.Header className={cx(styles.cardHeader,  "flexCol")}>
 								<div className={cx(styles.imageDiv)}>
 									<img src={BlogThumbnail} alt="blog-thumbnail" />
 								</div>
