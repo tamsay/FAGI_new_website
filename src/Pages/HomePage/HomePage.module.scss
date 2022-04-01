@@ -486,6 +486,21 @@
             }
         }
 
+        .projectsDiv{
+            gap: 1.75rem;
+            padding: 4rem 7rem !important;
+    
+            .title{
+                font-size: 2rem;
+                line-height: 1;
+            }
+            .textContent{
+                padding: 1rem;
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+        }
+
         .ourPurposeSection{
              .cardWrapper {
              gap: 2rem;

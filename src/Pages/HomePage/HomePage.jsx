@@ -98,7 +98,7 @@ const HomePage = () => {
 				<div className={cx(styles.container)}>
 					<div className={cx(styles.projectsDiv)}>
 						<div className={cx(styles.header, "flexRow-space-between-align-flex-end")}>
-							<h2>Projects</h2>
+							<h2 className={cx(styles.title)}>Projects</h2>
 							<Button onClick={()=>navigate("/")} title="View All" borderRadiusType="lowRounded" textColor="#1242D4" bordercolor = "" bgColor="#CED9F4"/>
 						</div>
 
