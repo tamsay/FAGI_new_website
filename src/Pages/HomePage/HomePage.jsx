@@ -15,6 +15,7 @@ import ProjectImage1 from "@/assets/images/projectContainer1.png";
 import ProjectImage2 from "@/assets/images/projectContainer2.png";
 import ProjectImage3 from "@/assets/images/projectContainer3.png";
 import ProjectImage4 from "@/assets/images/projectContainer4.png";
+import { Icon } from "@iconify/react";
 
 const HomePage = () => {
 
@@ -99,11 +100,11 @@ const HomePage = () => {
 					<div className={cx(styles.projectsDiv)}>
 						<div className={cx(styles.header, "flexRow-space-between-align-flex-end")}>
 							<h2 className={cx(styles.title)}>Projects</h2>
-							<Button onClick={()=>navigate("/")} title="View All" borderRadiusType="lowRounded" textColor="#1242D4" bordercolor = "" bgColor="#CED9F4"/>
+							<Button onClick={()=>navigate("/")} title="See All" borderRadiusType="lowRounded" textColor="#1242D4" bordercolor = "" bgColor="#CED9F4"/>
 						</div>
 
-						<div className={cx(styles.projects, "row")}>
-							<div className={cx(styles.mainCardDiv, "col-xs-12", "col-sm-8")}>
+						<div className={cx(styles.projects)}>
+							<div className={cx(styles.mainCardDiv)}>
 								
 								<Card className={cx(styles.cardItem)}>
 									<Card.Header className={cx(styles.cardHeader, "flexCol")}>
@@ -112,43 +113,49 @@ const HomePage = () => {
 										</div>
 									</Card.Header>
 									<Card.Body className={cx(styles.cardBody)}>
-										Project Details here
+										<small>August 8, 2017</small>
+										<div><p>Feed Ibadan Project</p><Icon icon="akar-icons:chevron-right" color="white" /></div>
 									</Card.Body>
 								</Card>
 							</div>
-							<div className={cx(styles.subCardsDiv, "col-xs-12", "col-sm-4")}>
-								<div>
+							<div className={cx(styles.subCardsDiv)}>
+								<div className={cx(styles.cardWrapper)}>
 									<Card className={cx(styles.cardItem)}>
-										<Card.Header className={cx(styles.cardHeader, "flexCol")}>
+										<Card.Header className={cx(styles.cardHeader)}>
 											<div className={cx(styles.imageDiv)}>
 												<img src={ProjectImage2} alt="" />
 											</div>
 										</Card.Header>
 										<Card.Body className={cx(styles.cardBody)}>
-										Project Details here
+											<small>August 8, 2017</small>
+											<div><p>Feed Ibadan Project</p><Icon icon="akar-icons:chevron-right" color="white" /></div>
 										</Card.Body>
 									</Card>
 								</div>
-								<div>	<Card className={cx(styles.cardItem)}>
-									<Card.Header className={cx(styles.cardHeader, "flexCol")}>
-										<div className={cx(styles.imageDiv)}>
-											<img src={ProjectImage3} alt="" />
-										</div>
-									</Card.Header>
-									<Card.Body className={cx(styles.cardBody)}>
-										Project Details here
-									</Card.Body>
-								</Card></div>
-								<div>	<Card className={cx(styles.cardItem)}>
-									<Card.Header className={cx(styles.cardHeader, "flexCol")}>
-										<div className={cx(styles.imageDiv)}>
-											<img src={ProjectImage4} alt="" />
-										</div>
-									</Card.Header>
-									<Card.Body className={cx(styles.cardBody)}>
-										Project Details here
-									</Card.Body>
-								</Card></div>
+								<div className={cx(styles.cardWrapper)}>	
+									<Card className={cx(styles.cardItem)}>
+										<Card.Header className={cx(styles.cardHeader)}>
+											<div className={cx(styles.imageDiv)}>
+												<img src={ProjectImage3} alt="" />
+											</div>
+										</Card.Header>
+										<Card.Body className={cx(styles.cardBody)}>
+											<small>August 8, 2017</small>
+											<div><p>Feed Ibadan Project</p><Icon icon="akar-icons:chevron-right" color="white" /></div>
+										</Card.Body>
+									</Card></div>
+								<div className={cx(styles.cardWrapper)}>	
+									<Card className={cx(styles.cardItem)}>
+										<Card.Header className={cx(styles.cardHeader)}>
+											<div className={cx(styles.imageDiv)}>
+												<img src={ProjectImage4} alt="" />
+											</div>
+										</Card.Header>
+										<Card.Body className={cx(styles.cardBody)}>
+											<small>August 8, 2017</small>
+											<div><p>Feed Ibadan Project</p><Icon icon="akar-icons:chevron-right" color="white" /></div>
+										</Card.Body>
+									</Card></div>
 							</div>
 						</div>
 					</div>
